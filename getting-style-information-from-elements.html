@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Style Information form Elements</title>
+</head>
+<body>
+    <p id="intro" style="color:red; font-size:20px;">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+        
+    <script>
+    // Selecting element
+    var elem = document.getElementById("intro");
+     
+    // Getting style information from element
+    alert(elem.style.color);  // Outputs: red
+    alert(elem.style.fontSize);  // Outputs: 20px
+    alert(elem.style.fontStyle);  // Outputs nothing
+    </script>
+</body>
+</html>
