@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert Adjacent HTML</title>
+</head>
+<body>
+    <p>Insert Before or After Elements </p>
+    <ul id="list">
+        <li>CSS</li>
+    </ul>
+    <script>
+        let list = document.querySelector('#list');
+
+        list.insertAdjacentHTML('beforebegin', '<h4>Vishambar Dutt</h4>');
+        list.insertAdjacentHTML('afterbegin', '<li>HTML</li>');
+        list.insertAdjacentHTML('beforeend', '<li>JavaScript</li>');
+        list.insertAdjacentHTML('afterend', '<p>UI Developer</p>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert a Node Before Another-JavaScript DOM - before()</title>
+</head>
+<body>
+    <p>This is Example of JavaScript DOM before() method demo.</p>
+
+
+    Adding Multiple Lists 
+    <ul>
+        <li>Nodejs</li>
+        <li>Vuejs</li>
+    </ul>
+    <script>
+        const p = document.querySelector('p');
+
+        // create a new h5 element before p tag
+        const h5 = document.createElement('h5');
+        h5.innerText = 'Insert Content JavaScript DOM - before()';
+
+        // insert the h1 before the paragraph
+        p.before(h5);
+        
+        //add multiple items before
+      
+        const datalist = document.querySelector('ul');
+
+            const lists = ['React', 'Anguular', 'Redux'];
+            const items = lists.map((list) => {
+                const item = document.createElement('li');
+                item.innerText = list;
+                return item;
+            });
+
+            datalist.firstChild.before(...items);
+    </script>  
+</body>
+</html>
