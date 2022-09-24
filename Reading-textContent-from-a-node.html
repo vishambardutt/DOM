@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Reading textContent from a node</title>
+</head>
+
+<body>
+    <div id="main">
+        Here is JavaScript Text Content
+        <span style="display:block">Display Block Text!</span>
+        <!-- my comment -->
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main.textContent);
+    </script>
+</body>
+
+</html>
